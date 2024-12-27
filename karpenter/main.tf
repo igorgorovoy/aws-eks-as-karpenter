@@ -40,11 +40,11 @@ provider "kubectl" {
 }
 
 terraform {
-  backend "s3" {
-    bucket = "294949574448-bucket-state-file-karpenter"
-    region = "eu-west-1"
-    key    = "karpenter.tfstate"
-  }
+  # backend "s3" {
+  #   bucket = "294949574448-bucket-state-file-karpenter"
+  #   region = "eu-west-1"
+  #   key    = "karpenter.tfstate"
+  # }
 
   required_providers {
     aws = {
